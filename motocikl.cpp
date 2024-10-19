@@ -2,6 +2,13 @@
 
 Motocikl::Motocikl() : proizvodac(""), model(""), zapremnina(0) {}
 
+Motocikl::Motocikl(std::string proizvodac, std::string model, int zapremnina) {
+    // konstruktor postavlja podatke kroz set metode jer se u njima vrši validacija
+    setProizvodac(proizvodac);
+    setModel(model);
+    setZapremnina(zapremnina);
+}
+
 std::string Motocikl::getProizvodac() {
     return proizvodac;
 }

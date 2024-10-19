@@ -1,3 +1,4 @@
+#include <iostream>
 #include "motocikl.h"
 
 Motocikl::Motocikl() : Motocikl("", "", 0) {}
@@ -37,4 +38,10 @@ void Motocikl::setZapremnina(int zapremnina) { // zapremnina mora biti pozitivan
         return;
     }
     this->zapremnina = zapremnina;
+}
+
+void Motocikl::info() {
+    std::cout << proizvodac << " ";
+    std::cout << model << " (";
+    std::cout << zapremnina << ")" << std::endl;
 }

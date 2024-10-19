@@ -14,6 +14,8 @@ public:
     void setModel(std::string model);
     void setZapremnina(int zapremnina);
 
+    void info();
+
 private:
     std::string proizvodac;
     std::string model;

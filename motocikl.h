@@ -3,6 +3,7 @@
 class Motocikl {
 public:
     Motocikl();
+    Motocikl(std::string proizvodac, std::string model);
     Motocikl(std::string proizvodac, std::string model, int zapremnina);
 
     std::string getProizvodac();
